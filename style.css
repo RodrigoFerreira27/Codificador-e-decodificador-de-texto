@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-primaria: #1E201E;
+    --cor-secundaria: #3C3D37;
+    --cor-tercearia: #697565;
+    --cor-quaternaria: #ECDFCC;
+
+}
+
+head{
+    top: 10%;
+    left: 10%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    width: 100vw;
+    background-color:var(--cor-primaria);
+    font-family: 'Urbanist', 'Regular' ;
+    font-weight: 400; 
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+}
+
+.criptografar{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 95%;
+    margin-left: 12%;
+    top: 15%;
+    border: none;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 150%;
+    color: var(--cor-quaternaria);
+
+} 
+
+.texto{
+    width: 42%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    border: none;
+    background-color: var(--cor-primaria)
+}
+
+.texto::placeholder{
+    color: var(--cor-quaternaria);
+}
+
+.texto:active, .texto:focus{
+    border: none;
+    outline: none;
+    outline-color: none;
+    color: var(--cor-quaternaria)
+}
+
+.alerta{   
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding: 0%;
+    gap: 8px;
+    color: var(--cor-tercearia);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    opacity: 0.8;
+    flex-grow: 0;
+    
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1% 0;
+    gap: 24px;
+    width: 80%;
+    left: 12%;
+    top: 82%;
+
+}
+
+.botaoCripto {
+    background-color: var(--cor-tercearia);
+    color: var(--cor-quaternaria);
+    width: 328px;
+    height: 67px;
+    font-size: 16px;
+    padding: 2%;
+    text-decoration: none;
+    border-radius: 24px;
+    border: 2px solid var(--cor-secundaria);
+    text-align: center;
+}
+
+.botaoDecripto {
+    background-color: var(--cor-quaternaria);
+    color: var(--cor-tercearia);
+    width: 328px;
+    height: 67px;
+    font-size: 16px;
+    padding: 2%;
+    text-decoration: none;
+    border-radius: 24px;
+    border: 2px solid var(--cor-secundaria);
+    text-align: center;
+}
+
+.botaoCripto:hover {
+    background-color: var(--cor-secundaria);
+    border-color: var(--cor-quaternaria);
+    padding: 1.8%;
+ 
+}
+
+.botaoDecripto:hover {
+    background-color: var(--cor-secundaria);
+    border-color:var(--cor-tercearia);
+    padding: 1.8%;
+
+}
+
+.mensagens{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24 0;
+    background-color: var(--cor-quaternaria);
+    border-radius: 32px;
+    width: 40%;
+    height: 95%;
+    left: 60%;
+    top: 5%;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    bottom: 5%;
+}
+
+.nenhuma{
+    font-family: 'Urbanist', bold;
+    width: auto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--cor-secundaria);
+}
+
+.digite{
+    display: flex;
+    justify-content: center;
+    font-family: 'Urbanist', bold;
+    width: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    color: var(--cor-tercearia);
+}
+
+.mensagens img {
+    width: 80%;
+    height: auto;
+    
+}
+
+.copiarTexto {
+    display: none; 
+    margin-top: 10px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-quaternaria);
+    width: 328px;
+    height: 67px;
+    font-size: 16px;
+    padding: 2%;
+    text-decoration: none;
+    border-radius: 24px;
+    border: 2px solid var(--cor-secundaria);
+    text-align: center;
+}
+
+.copiarTexto:hover{
+    background-color: var(--cor-tercearia);
+    border-color: var(--cor-primaria);
+    padding: 1.8%;
+    color: var(--cor-primaria)
+
+}
+
+.resultado{
+    font-family: 'Urbanist', 'Regular' ;
+    font-weight: 400; 
+    width: 42%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    border: none;
+    background-color: var(--cor-quaternaria);
+
+}
+
+footer{
+    background-color: var(--cor-tercearia);
+    color: var(--cor-quaternaria);
+    font-family: "Urban", sans-serif;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    bottom: 0;
+}
+
+@media (max-width: 900px) {
+
+    main {
+        flex-direction: column;
+    }
+
+    .criptografar {
+        width: 100%;
+        margin-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .texto {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .alerta {
+        width: 80%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .botoes {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .botaoCripto, .botaoDecripto {
+        width: 48%;
+        border-radius: 16px;
+    }
+
+    .mensagens {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .mensagens img{
+        display: none;
+        visibility: hidden;
+    }
+
+    .copiarTexto{    
+        width: 48%;
+        border-radius: 16px;
+    }
+    
+    .resultado {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        margin-top: 20px; 
+    }
+}

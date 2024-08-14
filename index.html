@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto
+    </title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js"></script>
+</head>
+<body>
+    <Head><img class="logo" src="imgs/logo alura.JPG" alt="logo da alura" style="width: 40px; height: 40px;"></Head>
+    <Main> 
+        <div class="criptografar"> 
+            <textarea 
+            name="textoUsuario" 
+            id="textoUsuario" 
+            class="texto" 
+            placeholder="Digite seu texto aqui..."
+            ></textarea>
+            <div class="alerta">
+                <p>
+                    <img src="imgs/alerta.JPG" alt="exclamação" style="width: 16px; height: 16px; vertical-align: middle;">
+                    Apenas letras minúsculas e sem acento.
+                </p>
+            </div>
+            <div class="botoes">
+                <button 
+                class="botaoCripto" 
+                type="button" 
+                onclick="criptografar()">Criptografar
+                </button>
+                <input 
+                class="botaoDecripto"
+                type="button"
+                value="Descriptografar"
+                onclick="descriptografar()"
+                />
+        </div></div>
+        <div class="mensagens"> 
+                <img src="imgs/imglupa.jpg" alt="imagem de lupa" id="lupa" style="width: 306px; height: 274px;"> 
+                <div class="mensagemCriptografada" id="mensagemCriptografada">
+                <h2 id="nenhuma" class="nenhuma"><strong>Nenhuma mensagem encontrada</strong></h2> 
+                <p2 id="digite" class="digite">Digite um texto que você deseja criptografar ou descriptografar.</p2></div>
+            <div class="resultado" id="resultado"></div>
+                <button id="copiarTexto" class="copiarTexto" onclick="copiarParaClipboard()">Copiar Texto</button>
+            </div> 
+        </div>
+    </Main>
+    <footer> Rodrigo Felipe da Silva Ferreira - 2024 </footer> 
+    
+
+</body>
+</html>
